@@ -1,0 +1,135 @@
+site_name: DISC Lab Wiki
+site_description: Internal knowledge base and operating handbook for the Digital Intelligence for Structures and Construction Lab
+site_author: DISC Lab
+site_url: https://YOUR-USERNAME.github.io/disclab-wiki/
+repo_url: https://github.com/YOUR-USERNAME/disclab-wiki
+repo_name: YOUR-USERNAME/disclab-wiki
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 DISC Lab
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR-USERNAME
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.com/
+
+nav:
+  - Home: index.md
+  - Lab Overview:
+      - Overview: lab-overview/index.md
+      - Vision and Mission: lab-overview/vision-mission.md
+      - Research Areas: lab-overview/research-areas.md
+      - Ongoing Projects: lab-overview/ongoing-projects.md
+      - Publications: lab-overview/publications.md
+  - Research Guidelines:
+      - Overview: research-guidelines/index.md
+      - Project Structure: research-guidelines/project-structure.md
+      - Coding Standards: research-guidelines/coding-standards.md
+      - Dataset Management: research-guidelines/dataset-management.md
+      - Experiment Tracking: research-guidelines/experiment-tracking.md
+      - Naming Conventions: research-guidelines/naming-conventions.md
+  - Data Management:
+      - Overview: data-management/index.md
+      - Folder Hierarchy: data-management/folder-hierarchy.md
+      - Data Lifecycle: data-management/data-lifecycle.md
+      - Metadata Requirements: data-management/metadata-requirements.md
+      - Backup and Security: data-management/backup-security.md
+      - Versioning: data-management/versioning.md
+  - AI and CV Best Practices:
+      - Overview: ai-cv-best-practices/index.md
+      - Training Workflows: ai-cv-best-practices/training-workflows.md
+      - Annotation Standards: ai-cv-best-practices/annotation-standards.md
+      - Evaluation Metrics: ai-cv-best-practices/evaluation-metrics.md
+      - Reproducibility Checklist: ai-cv-best-practices/reproducibility-checklist.md
+  - 3D and Digitalization Pipelines:
+      - Overview: digitalization-pipelines/index.md
+      - Photogrammetry: digitalization-pipelines/photogrammetry.md
+      - NeRF and Gaussian Splatting: digitalization-pipelines/nerf-gaussian-splatting.md
+      - Mesh Processing: digitalization-pipelines/mesh-processing.md
+      - LOD Definitions: digitalization-pipelines/lod-definitions.md
+  - XR Development:
+      - Overview: xr-development/index.md
+      - Unity Project Structure: xr-development/unity-project-structure.md
+      - HoloLens Deployment: xr-development/hololens-deployment.md
+      - ONNX Integration: xr-development/onnx-integration.md
+      - Performance Constraints: xr-development/performance-constraints.md
+  - Writing and Publications:
+      - Overview: writing-publications/index.md
+      - Paper Templates: writing-publications/paper-templates.md
+      - Internal Review Process: writing-publications/internal-review-process.md
+      - Authorship Guidelines: writing-publications/authorship-guidelines.md
+      - Conference vs Journal Strategy: writing-publications/conference-vs-journal-strategy.md
+  - Student Onboarding:
+      - Overview: student-onboarding/index.md
+      - First Week Checklist: student-onboarding/first-week-checklist.md
+      - Tool Installation: student-onboarding/tool-installation.md
+      - Access and Accounts: student-onboarding/access-and-accounts.md
+      - Expectations: student-onboarding/expectations.md
+  - Project Templates:
+      - Overview: project-templates/index.md
+      - Starter Repository: project-templates/starter-repository.md
+      - README Template: project-templates/readme-template.md
+      - Experiment Log Template: project-templates/experiment-log-template.md
+  - Infrastructure and Resources:
+      - Overview: infrastructure-resources/index.md
+      - GPU Servers: infrastructure-resources/gpu-servers.md
+      - Cloud Accounts: infrastructure-resources/cloud-accounts.md
+      - Lab Equipment: infrastructure-resources/lab-equipment.md
+  - Administrative Policies:
+      - Overview: admin-policies/index.md
+      - Meetings: admin-policies/meetings.md
+      - Reporting Expectations: admin-policies/reporting-expectations.md
+      - Code Review Rules: admin-policies/code-review-rules.md
+      - Data Ownership: admin-policies/data-ownership.md
