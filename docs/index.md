@@ -14,6 +14,9 @@ This site is designed as the lab's central documentation system. It should suppo
 
 This wiki should function as the lab's **single source of operational truth** for recurring procedures, technical workflows, templates, and internal expectations.
 
+
+<!--
+
 ## Recommended editorial principles
 
 1. Prefer short, actionable pages over long descriptive pages.
@@ -31,6 +34,7 @@ This wiki should function as the lab's **single source of operational truth** fo
 - Experiment tracking
 - Authorship guidelines
 - Meeting and reporting expectations
+-->
 
 ## Maintenance ownership
 

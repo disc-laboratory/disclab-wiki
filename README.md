@@ -4,9 +4,20 @@ This repository is a starter template for a lab wiki built with MkDocs and Mater
 
 ## Quick start
 
+### Python venv
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
+mkdocs serve
+```
+
+### Conda environment
+
+```bash
+conda create -n disclab-wiki python=3.10
+conda activate disclab-wiki
 pip install -r requirements.txt
 mkdocs serve
 ```
