@@ -107,12 +107,12 @@ nav:
   #    - HoloLens Deployment: xr-development/hololens-deployment.md
   #    - ONNX Integration: xr-development/onnx-integration.md
   #    - Performance Constraints: xr-development/performance-constraints.md
-  #- Writing and Publications:
-  #    - Overview: writing-publications/index.md
-  #    - Paper Templates: writing-publications/paper-templates.md
-  #    - Internal Review Process: writing-publications/internal-review-process.md
-  #    - Authorship Guidelines: writing-publications/authorship-guidelines.md
-  #    - Conference vs Journal Strategy: writing-publications/conference-vs-journal-strategy.md
+  - Writing and Publications:
+      - Overview: writing-publications/index.md
+      - Paper Templates: writing-publications/paper-templates.md
+      - Internal Review Process: writing-publications/internal-review-process.md
+      - Authorship Guidelines: writing-publications/authorship-guidelines.md
+      - Conference vs Journal Strategy: writing-publications/conference-vs-journal-strategy.md
   - Student Onboarding:
       - Overview: student-onboarding/index.md
       - First Week Checklist: student-onboarding/first-week-checklist.md
