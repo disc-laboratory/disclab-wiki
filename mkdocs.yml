@@ -77,7 +77,8 @@ nav:
   #    - Publications: lab-overview/publications.md
   - Lab Manual:
       - Overview: lab-manual/index.md
-      - Onboarding guidelines: lab-manual/DISCLab_onboarding_guidelines.md
+      - Onboarding Guidelines: lab-manual/DISCLab_onboarding_guidelines.md
+      - Data and Project Management Guidelines: lab-manual/DISCLab_data_management_guidelines.md
   - Research Guidelines:
       - Overview: research-guidelines/index.md
       - Project Structure: research-guidelines/project-structure.md

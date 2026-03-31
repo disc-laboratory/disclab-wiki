@@ -50,7 +50,7 @@ All code development is managed through the lab [GitHub organization](https://gi
 
 ### DISCLab wiki
 
-The [Lab's Wiki page](URLhttps://disc-laboratory.github.io/disclab-wiki/) contain relevant information useful for the team members. It is encoraged to review the content as well to contribute to it. The objective of this page is to have a central knowledge base of the group for any possible operational aspect. This involves guideliness, templates, tutorials, best practices, etc.
+The [Lab's Wiki page](https://disc-laboratory.github.io/disclab-wiki/) contain relevant information useful for the team members. It is encoraged to review the content as well to contribute to it. The objective of this page is to have a central knowledge base of the group for any possible operational aspect. This involves guideliness, templates, tutorials, best practices, etc.
 
 ### Youtube
 
