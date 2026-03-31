@@ -75,6 +75,9 @@ nav:
   #    - Research Areas: lab-overview/research-areas.md
   #    - Ongoing Projects: lab-overview/ongoing-projects.md
   #    - Publications: lab-overview/publications.md
+  - Lab Manual:
+      - Overview: lab-manual/index.md
+      - Onboarding guidelines: lab-manual/DISCLab_onboarding_guidelines.md
   - Research Guidelines:
       - Overview: research-guidelines/index.md
       - Project Structure: research-guidelines/project-structure.md
