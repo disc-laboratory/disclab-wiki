@@ -78,6 +78,9 @@ nav:
   - Lab Manual:
       - Overview: lab-manual/index.md
       - Onboarding Guidelines: lab-manual/DISCLab_onboarding_guidelines.md
+      - Team members expectations: 
+         - Overview: lab-manual/team-expectations/index.md
+         - Postdoc expectations: lab-manual/team-expectations/DISCLab_postdoc_expectations.md
       - Data and Project Management Guidelines: lab-manual/DISCLab_data_management_guidelines.md
   - Research Guidelines:
       - Overview: research-guidelines/index.md
