@@ -1,29 +1,7 @@
 
-%1.1
-% ---------- Title block ----------
-%\vspace*0.2cm
-%\smallsoftGray School of Civil and Environmental Engineering \textbar\ Digital Intelligence for Structures and Construction (DISC)
-
-%
-%Postdoctoral Researcher Expectations and Working Principles
 # Postdoctoral Researcher Expectations and Working Principles
 
 This document outlines the main expectations, working norms, and professional responsibilities associated with a postdoctoral appointment in the **Digital Intelligence for Structures and Construction research group at NTU Singapore. It is intended to promote transparency, alignment, and a productive working relationship from the outset.
-
-%
-%
----
-
-%Institution:School of Civil and Environmental Engineering --- Nanyang Technological University, Singapore
-%Research group:Digital Intelligence for Structures and Construction Laboratory --- DISCLab
-%Supervisor:Prof. Bryan G. Pantoja-Rosero
-%Postdoc candidate:Zhicong Sun
-%Topic:Computer vision, machine learning, and/or robotics for infrastructure monitoring and construction automation)
-%Date:March 6, 2026
-
-%-.7cm
-%
----
 
 ## Purpose of this Document
 This document is provided together with the offer of a postdoctoral position to clarify expectations before the appointment begins. Its purpose is to reduce ambiguity, support mutual understanding, and help prevent avoidable misunderstandings at a later stage.
@@ -238,14 +216,3 @@ Departure should not leave the project in a state where critical knowledge or ma
 The goal of this document is not to create rigidity, but to set a professional foundation for an effective working relationship. The supervisor is committed to providing academic guidance, regular feedback, reasonable access to discussion, and support for the postdoctoral researcher’s professional growth. In return, the postdoctoral researcher is expected to engage seriously with the role and to uphold the standards outlined above.
 
 ---
-
-\section*Acknowledgement
-I confirm that I have read and understood this document. I understand that it summarizes the working expectations associated with the postdoctoral appointment and is intended to support clarity and alignment before acceptance of the position.
-
-1cm
-
-**Researcher Name: \\
-
-1cm
-
-**Signature: 5cm.4pt 1cm **Date: 5cm.4pt

@@ -12,26 +12,26 @@ A visiting PhD appointment in the group is a research-focused, time-bounded acad
 
 The visiting PhD student is expected to:
 
-    - contribute actively to the research objectives associated with the visit and, where relevant, to the broader mission of the group;
-    - integrate efficiently into the scientific and technical workflow of the lab;
-    - work with professionalism, integrity, consistency, and collegiality;
-    - operate with a meaningful degree of independence appropriate to an advanced doctoral researcher;
-    - make steady progress toward high-quality scholarly or technical outputs during the visit;
-    - help maintain an effective, respectful, and well-organized research environment;
-    - use the visit productively as an opportunity to deepen technical expertise, strengthen scientific judgement, and contribute to work of lasting value.
+- contribute actively to the research objectives associated with the visit and, where relevant, to the broader mission of the group;
+- integrate efficiently into the scientific and technical workflow of the lab;
+- work with professionalism, integrity, consistency, and collegiality;
+- operate with a meaningful degree of independence appropriate to an advanced doctoral researcher;
+- make steady progress toward high-quality scholarly or technical outputs during the visit;
+- help maintain an effective, respectful, and well-organized research environment;
+- use the visit productively as an opportunity to deepen technical expertise, strengthen scientific judgement, and contribute to work of lasting value.
 
 The visiting student is not expected to operate at exactly the same level of independence as a postdoctoral researcher. However, because the visit is limited in duration and typically involves a student who is already relatively advanced, the expectation is that the visiting student should be able to contribute more quickly, more autonomously, and more concretely than an early-stage PhD student.
 
 ## General Professional Expectations
 The visiting PhD student is expected to:
 
-    - behave professionally and respectfully toward all students, staff, collaborators, and administrative personnel;
-    - communicate in a timely, clear, and constructive manner;
-    - act with honesty in research, reporting, authorship, data handling, and use of resources;
-    - respect deadlines, commitments, and agreed responsibilities;
-    - raise concerns early rather than allowing issues to accumulate;
-    - represent the group and institution professionally in meetings, presentations, conferences, site visits, and online communication;
-    - comply with relevant university and laboratory rules, including those related to safety, ethics, confidentiality, and responsible conduct of research.
+- behave professionally and respectfully toward all students, staff, collaborators, and administrative personnel;
+- communicate in a timely, clear, and constructive manner;
+- act with honesty in research, reporting, authorship, data handling, and use of resources;
+- respect deadlines, commitments, and agreed responsibilities;
+- raise concerns early rather than allowing issues to accumulate;
+- represent the group and institution professionally in meetings, presentations, conferences, site visits, and online communication;
+- comply with relevant university and laboratory rules, including those related to safety, ethics, confidentiality, and responsible conduct of research.
 
 A visiting appointment is temporary, but the same expectation of professionalism applies. Limited duration is not a reason for reduced seriousness, reduced accountability, or informal handling of work. The student is expected to contribute responsibly and to engage with the group in a way that is respectful, reliable, and professionally appropriate.
 
@@ -41,12 +41,12 @@ The visiting PhD student is expected to take meaningful ownership of the assigne
 
 The visiting PhD student should be able to:
 
-    - understand the scientific goals, technical scope, and deliverables associated with the visit;
-    - plan and execute research activities with a reasonable degree of independence;
-    - troubleshoot problems systematically and document solutions;
-    - critically assess results rather than only generating them;
-    - propose technically sound ideas, extensions, and improvements where relevant;
-    - connect the work carried out during the visit to broader research questions and, where applicable, to the student's home PhD trajectory.
+- understand the scientific goals, technical scope, and deliverables associated with the visit;
+- plan and execute research activities with a reasonable degree of independence;
+- troubleshoot problems systematically and document solutions;
+- critically assess results rather than only generating them;
+- propose technically sound ideas, extensions, and improvements where relevant;
+- connect the work carried out during the visit to broader research questions and, where applicable, to the student's home PhD trajectory.
 
 Although guidance and discussion will of course be provided, the visiting student is expected to avoid passivity and excessive dependence. A visiting appointment works best when the student shows initiative, asks focused questions, takes responsibility for progress, and is able to convert discussion into concrete action.
 
@@ -55,24 +55,24 @@ The group places strong emphasis on rigor and quality. The visiting PhD student 
 
 This includes expectations such as:
 
-    - careful experimental design and documentation;
-    - appropriate validation, benchmarking, and uncertainty awareness;
-    - clean, understandable, and well-documented code and computational workflows;
-    - organized data and version control practices;
-    - accurate and thoughtful interpretation of results;
-    - professional writing for manuscripts, reports, proposals, and presentations.
+- careful experimental design and documentation;
+- appropriate validation, benchmarking, and uncertainty awareness;
+- clean, understandable, and well-documented code and computational workflows;
+- organized data and version control practices;
+- accurate and thoughtful interpretation of results;
+- professional writing for manuscripts, reports, proposals, and presentations.
 
 Because the visiting student is usually at a relatively advanced stage of doctoral training, the expectation is that a reasonable foundation in good research practice already exists. The visit may certainly involve learning new tools or approaches, but the overall standard of work is expected to be mature enough to support meaningful research contribution within the visit period.
 
 ### Productivity and deliverables
 The precise expected outputs depend on the project, the duration of the visit, the student's background, the stage of the work, and any agreements with the home institution or funding body. However, the visiting PhD student is generally expected to contribute meaningfully during the visit to several of the following:
 
-    - journal papers and conference papers;
-    - technical reports, datasets, codebases, prototypes, or demonstrators;
-    - internal project milestones and sponsor deliverables where relevant;
-    - methodological studies, validation work, or integration tasks;
-    - presentations to collaborators, sponsors, or the research community;
-    - a clearly identifiable contribution that remains useful after the visit ends.
+- journal papers and conference papers;
+- technical reports, datasets, codebases, prototypes, or demonstrators;
+- internal project milestones and sponsor deliverables where relevant;
+- methodological studies, validation work, or integration tasks;
+- presentations to collaborators, sponsors, or the research community;
+- a clearly identifiable contribution that remains useful after the visit ends.
 
 Publication quantity alone is not the only performance measure. However, because the visit is time-limited, a sustained lack of tangible contribution, without justified reasons and prior discussion, will be considered a serious concern. The expectation is that the student will make credible, visible progress and translate effort into concrete outcomes within the visit period.
 
@@ -81,24 +81,24 @@ The visiting appointment is short and therefore should be treated as a focused r
 
 In the **initial stage of the visit, the student is generally expected to:
 
-    - become familiar quickly with the relevant project context, datasets, tools, workflows, and literature;
-    - clarify the concrete goals, scope, and expected outputs of the visit;
-    - identify the immediate technical tasks required to become operational;
-    - begin contributing without unnecessary delay.
+- become familiar quickly with the relevant project context, datasets, tools, workflows, and literature;
+- clarify the concrete goals, scope, and expected outputs of the visit;
+- identify the immediate technical tasks required to become operational;
+- begin contributing without unnecessary delay.
 
 In the **middle stage of the visit, the student is generally expected to:
 
-    - contribute actively to experiments, methodology development, analysis, or integration tasks;
-    - demonstrate technical ownership and increasingly independent execution;
-    - generate results, intermediate outputs, or building blocks toward publication or other deliverables;
-    - communicate clearly about progress, bottlenecks, and next steps.
+- contribute actively to experiments, methodology development, analysis, or integration tasks;
+- demonstrate technical ownership and increasingly independent execution;
+- generate results, intermediate outputs, or building blocks toward publication or other deliverables;
+- communicate clearly about progress, bottlenecks, and next steps.
 
 In the **final stage of the visit, the student is generally expected to:
 
-    - consolidate the work carried out during the visit into reusable outputs;
-    - help prepare manuscripts, technical reports, or structured handover material where relevant;
-    - document the work clearly enough for continuity after departure;
-    - ensure that the visit leaves a meaningful and traceable contribution rather than fragmented or inaccessible partial work.
+- consolidate the work carried out during the visit into reusable outputs;
+- help prepare manuscripts, technical reports, or structured handover material where relevant;
+- document the work clearly enough for continuity after departure;
+- ensure that the visit leaves a meaningful and traceable contribution rather than fragmented or inaccessible partial work.
 
 These stages are indicative rather than rigid. The exact balance depends on the visit duration and project context. The important expectation is that the visit should show a credible trajectory from quick integration to meaningful contribution and orderly handover.
 
@@ -107,12 +107,12 @@ The visiting PhD student is expected to maintain regular communication with the 
 
 Minimum expectations include:
 
-    - attending scheduled one-to-one meetings, group meetings, project meetings, and other essential research discussions;
-    - preparing adequately for meetings, including bringing updates, questions, and next steps;
-    - responding to important emails and messages within a reasonable time frame;
-    - informing the supervisor in advance when deadlines may not be met;
-    - communicating absences, delays, obstacles, or personal constraints that materially affect project progress;
-    - sharing information in a timely way rather than working in isolation on issues that affect the team.
+- attending scheduled one-to-one meetings, group meetings, project meetings, and other essential research discussions;
+- preparing adequately for meetings, including bringing updates, questions, and next steps;
+- responding to important emails and messages within a reasonable time frame;
+- informing the supervisor in advance when deadlines may not be met;
+- communicating absences, delays, obstacles, or personal constraints that materially affect project progress;
+- sharing information in a timely way rather than working in isolation on issues that affect the team.
 
 As a general working norm, communication should be proactive. Repeated silence, lack of responsiveness, or lack of visibility over ongoing work is not acceptable in a collaborative research environment. In the case of a visiting appointment, this is especially important because delays in communication can consume a significant fraction of the visit and reduce the value of the collaboration.
 
@@ -121,22 +121,22 @@ A visiting PhD appointment is an outcomes-driven research engagement rather than
 
 The visiting PhD student is expected to:
 
-    - maintain an appropriate and consistent level of engagement with the project and group;
-    - be reasonably available during normal working periods for meetings and collaborative work;
-    - spend sufficient time on the research to meet the expected progress and deliverables of the visit;
-    - use flexible working arrangements responsibly, where permitted;
-    - discuss in advance any recurring schedule constraints, remote-working plans, travel, or other factors that may affect availability.
+- maintain an appropriate and consistent level of engagement with the project and group;
+- be reasonably available during normal working periods for meetings and collaborative work;
+- spend sufficient time on the research to meet the expected progress and deliverables of the visit;
+- use flexible working arrangements responsibly, where permitted;
+- discuss in advance any recurring schedule constraints, remote-working plans, travel, or other factors that may affect availability.
 
 A visiting appointment should not be treated as a passive affiliation or as a loosely defined presence in the group. The level of commitment should reflect the seriousness of the visit, the limited time available, and the expectation that the student is joining in order to contribute meaningfully rather than merely observe.
 
 ## Reporting and Documentation
 Good research management requires proper documentation. The visiting PhD student is expected to maintain orderly records of relevant work, which may include:
 
-    - experiment logs and methodological notes;
-    - code repositories and version histories;
-    - structured storage of datasets, models, scripts, figures, and reports;
-    - summaries of results, decisions, and action items;
-    - progress updates suitable for internal tracking, sponsor reporting where relevant, or post-visit continuity.
+- experiment logs and methodological notes;
+- code repositories and version histories;
+- structured storage of datasets, models, scripts, figures, and reports;
+- summaries of results, decisions, and action items;
+- progress updates suitable for internal tracking, sponsor reporting where relevant, or post-visit continuity.
 
 If requested, the visiting PhD student should provide concise periodic written updates on progress, obstacles, priorities, and next steps. Research materials generated during the visit should be stored in a manner accessible to the group and not only on personal devices or private accounts.
 
@@ -153,12 +153,12 @@ Authorship should reflect substantial intellectual or technical contribution and
 
 General expectations include:
 
-    - authorship is earned through substantial contribution, not assumed by title or seniority alone;
-    - first authorship typically requires a leading contribution to the core research and manuscript preparation;
-    - for publications arising primarily from the group's projects, funding, infrastructure, supervision, or intellectual direction, the supervisor must be listed as the last author, serve as the corresponding author, and be acknowledged as the principal investigator;
-    - for other publications connected to work conducted within the group, authorship and author order should be discussed with the supervisor at an early stage and determined based on the nature and extent of contributions;
-    - all listed authors are expected to contribute, review, and stand by the submitted work to a reasonable extent;
-    - acknowledgement may be more appropriate than authorship for limited or peripheral contributions.
+- authorship is earned through substantial contribution, not assumed by title or seniority alone;
+- first authorship typically requires a leading contribution to the core research and manuscript preparation;
+- for publications arising primarily from the group's projects, funding, infrastructure, supervision, or intellectual direction, the supervisor must be listed as the last author, serve as the corresponding author, and be acknowledged as the principal investigator;
+- for other publications connected to work conducted within the group, authorship and author order should be discussed with the supervisor at an early stage and determined based on the nature and extent of contributions;
+- all listed authors are expected to contribute, review, and stand by the submitted work to a reasonable extent;
+- acknowledgement may be more appropriate than authorship for limited or peripheral contributions.
 
 The visiting PhD student should not submit manuscripts, abstracts, or related outputs based on group work without prior discussion and approval from the supervisor and relevant co-authors. Because a visiting arrangement may involve coordination with the student's home supervisor and institution, authorship and publication planning should be discussed early to avoid misunderstandings later.
 
@@ -189,11 +189,11 @@ The group values a constructive, respectful, and collaborative culture. The visi
 
 This includes:
 
-    - interacting respectfully with students and colleagues;
-    - giving and receiving technically sound and professional feedback;
-    - avoiding dismissive, hostile, or inappropriate behavior;
-    - recognizing that collaboration requires transparency and mutual accountability;
-    - supporting a culture in which members can ask questions and seek guidance without fear of disrespect.
+- interacting respectfully with students and colleagues;
+- giving and receiving technically sound and professional feedback;
+- avoiding dismissive, hostile, or inappropriate behavior;
+- recognizing that collaboration requires transparency and mutual accountability;
+- supporting a culture in which members can ask questions and seek guidance without fear of disrespect.
 
 Because the visiting student joins an existing team for a limited period, it is particularly important to adapt constructively to the group's working culture, communicate respectfully, and contribute in a way that supports rather than disrupts the ongoing work of others.
 
@@ -207,11 +207,11 @@ Access to equipment, software, computing resources, travel, consumables, or proj
 
 The visiting PhD student is expected to:
 
-    - use research funds and resources responsibly;
-    - seek approval before incurring reimbursable expenses where required;
-    - align conference and travel plans with project priorities, stage of the visit, and available resources;
-    - understand that not all conferences, travel requests, or purchases can necessarily be supported;
-    - handle institutional assets with care.
+- use research funds and resources responsibly;
+- seek approval before incurring reimbursable expenses where required;
+- align conference and travel plans with project priorities, stage of the visit, and available resources;
+- understand that not all conferences, travel requests, or purchases can necessarily be supported;
+- handle institutional assets with care.
 
 Where funding or travel support is limited, priorities should be determined based on the scientific value of the activity, the maturity of the work, and the overall needs of the project and group.
 
@@ -227,12 +227,12 @@ A productive research environment requires open, respectful, and timely communic
 
 Examples of concerns that should be communicated early include, but are not limited to:
 
-    - misunderstandings regarding responsibilities, expectations, or priorities;
-    - difficulties in communication or collaboration with other group members, students, staff, or external collaborators;
-    - concerns about authorship, acknowledgement, contribution, or publication planning;
-    - disagreement regarding research direction, technical decisions, or allocation of effort;
-    - obstacles affecting progress, including lack of clarity, resource limitations, or personal circumstances that materially affect the work;
-    - any situation in which an issue may worsen if left unaddressed.
+- misunderstandings regarding responsibilities, expectations, or priorities;
+- difficulties in communication or collaboration with other group members, students, staff, or external collaborators;
+- concerns about authorship, acknowledgement, contribution, or publication planning;
+- disagreement regarding research direction, technical decisions, or allocation of effort;
+- obstacles affecting progress, including lack of clarity, resource limitations, or personal circumstances that materially affect the work;
+- any situation in which an issue may worsen if left unaddressed.
 
 In most cases, concerns should first be raised with the supervisor in a professional and constructive manner. The purpose of such discussion is to clarify expectations, understand the issue, and identify a reasonable path forward. Where appropriate, concerns involving other members of the group, the home institution, or collaborators may also be addressed through a joint discussion with the relevant parties.
 
@@ -243,24 +243,24 @@ If concerns arise regarding performance, conduct, communication, professionalism
 
 Examples of issues that may require attention include, but are not limited to:
 
-    - persistent lack of progress without reasonable explanation;
-    - repeated failure to meet agreed responsibilities or deadlines;
-    - poor communication or prolonged unresponsiveness;
-    - failure to document or share essential research materials appropriately;
-    - serious lapses in professional conduct or research integrity;
-    - behaviour that negatively affects the working environment or project continuity;
-    - prolonged lack of meaningful contribution relative to the agreed objectives of the visit.
+- persistent lack of progress without reasonable explanation;
+- repeated failure to meet agreed responsibilities or deadlines;
+- poor communication or prolonged unresponsiveness;
+- failure to document or share essential research materials appropriately;
+- serious lapses in professional conduct or research integrity;
+- behaviour that negatively affects the working environment or project continuity;
+- prolonged lack of meaningful contribution relative to the agreed objectives of the visit.
 
 Nothing in this document limits the application of formal institutional procedures where required.
 
 ## End-of-Visit Responsibilities
 Before the visit ends, the visiting PhD student is expected to support an orderly transition. This includes, as applicable:
 
-    - organizing and transferring project files, repositories, data, models, and documentation;
-    - summarizing the status of ongoing tasks, manuscripts, and deliverables;
-    - returning equipment, access items, or other institutional property as required;
-    - clarifying any remaining publication, authorship, or handover matters;
-    - helping ensure that the work carried out during the visit is archived in a way that remains understandable and usable by the group.
+- organizing and transferring project files, repositories, data, models, and documentation;
+- summarizing the status of ongoing tasks, manuscripts, and deliverables;
+- returning equipment, access items, or other institutional property as required;
+- clarifying any remaining publication, authorship, or handover matters;
+- helping ensure that the work carried out during the visit is archived in a way that remains understandable and usable by the group.
 
 Completion of the visit should not leave the project in a state where critical knowledge or materials are inaccessible. A successful visit should leave behind work that is technically usable, scientifically interpretable, and administratively clear enough to support continuity after departure.
 
@@ -268,10 +268,3 @@ Completion of the visit should not leave the project in a state where critical k
 The goal of this document is not to create rigidity, but to set a professional foundation for an effective and productive research visit. The supervisor is committed to providing academic guidance, regular feedback, reasonable access to discussion, and support for the visiting student's scientific and professional growth during the stay. In return, the visiting PhD student is expected to engage seriously with the role, contribute actively and professionally within the limited duration of the visit, and uphold the standards outlined above.
 
 ---
-
-\section*Acknowledgement
-I confirm that I have read and understood this document. I understand that it summarizes the working expectations associated with the visiting PhD appointment and is intended to support clarity and alignment before or at the start of the research visit.
-
-**Student Name:
-
-**Signature: ____________________   **Date: ____________________

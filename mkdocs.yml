@@ -91,13 +91,13 @@ nav:
       - Dataset Management: research-guidelines/dataset-management.md
       - Experiment Tracking: research-guidelines/experiment-tracking.md
       - Naming Conventions: research-guidelines/naming-conventions.md
-  - Data Management:
-      - Overview: data-management/index.md
-      - Folder Hierarchy: data-management/folder-hierarchy.md
-      - Data Lifecycle: data-management/data-lifecycle.md
-      - Metadata Requirements: data-management/metadata-requirements.md
-      - Backup and Security: data-management/backup-security.md
-      - Versioning: data-management/versioning.md
+  #- Data Management:
+  #    - Overview: data-management/index.md
+  #    - Folder Hierarchy: data-management/folder-hierarchy.md
+  #    - Data Lifecycle: data-management/data-lifecycle.md
+  #    - Metadata Requirements: data-management/metadata-requirements.md
+  #    - Backup and Security: data-management/backup-security.md
+  #    - Versioning: data-management/versioning.md
   #- AI and CV Best Practices:
   #    - Overview: ai-cv-best-practices/index.md
   #    - Training Workflows: ai-cv-best-practices/training-workflows.md
@@ -122,17 +122,17 @@ nav:
       - Internal Review Process: writing-publications/internal-review-process.md
       - Authorship Guidelines: writing-publications/authorship-guidelines.md
       - Conference vs Journal Strategy: writing-publications/conference-vs-journal-strategy.md
-  - Student Onboarding:
-      - Overview: student-onboarding/index.md
-      - First Week Checklist: student-onboarding/first-week-checklist.md
-      - Tool Installation: student-onboarding/tool-installation.md
-      - Access and Accounts: student-onboarding/access-and-accounts.md
-      - Expectations: student-onboarding/expectations.md
-  - Project Templates:
-      - Overview: project-templates/index.md
-      - Starter Repository: project-templates/starter-repository.md
-      - README Template: project-templates/readme-template.md
-      - Experiment Log Template: project-templates/experiment-log-template.md
+  #- Student Onboarding:
+  #    - Overview: student-onboarding/index.md
+  #    - First Week Checklist: student-onboarding/first-week-checklist.md
+  #    - Tool Installation: student-onboarding/tool-installation.md
+  #    - Access and Accounts: student-onboarding/access-and-accounts.md
+  #    - Expectations: student-onboarding/expectations.md
+  #- Project Templates:
+  #    - Overview: project-templates/index.md
+  #    - Starter Repository: project-templates/starter-repository.md
+  #    - README Template: project-templates/readme-template.md
+  #    - Experiment Log Template: project-templates/experiment-log-template.md
   #- Infrastructure and Resources:
   #    - Overview: infrastructure-resources/index.md
   #    - GPU Servers: infrastructure-resources/gpu-servers.md
@@ -144,3 +144,8 @@ nav:
   #    - Reporting Expectations: admin-policies/reporting-expectations.md
   #    - Code Review Rules: admin-policies/code-review-rules.md
   #    - Data Ownership: admin-policies/data-ownership.md
+  - Lab Templates:
+      - Overview: lab-templates/index.md
+      - DISCLab Slides Template: lab-templates/template_slides.md
+      - DISCLab CV Template: lab-templates/template_cv.md
+      - DISCLab Paper Template: lab-templates/template_paper.md
