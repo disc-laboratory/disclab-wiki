@@ -19,10 +19,6 @@ The template supports both abstract-only and full-paper modes and is compatible 
 - [Download the references file](files/references.bib)
 - [Download the PDF example](files/DISCLab_paper_template.pdf)
 
-## Preview
-
-<iframe src="files/DISCLab_paper_template.pdf" width="100%" height="700px"></iframe>
-
 ## Usage
 
 - Use this template as a starting point for writing papers;
@@ -44,4 +40,4 @@ The template supports both abstract-only and full-paper modes and is compatible 
 ---
 
 **Maintained by:** DISC Laboratory  
-**Last updated:** March 2026
+**Last updated:** March 31, 2026

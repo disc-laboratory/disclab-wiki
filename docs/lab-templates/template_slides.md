@@ -19,10 +19,6 @@ The template follows a clean structure aligned with NTU and DISC Lab branding.
 - [Download the references file](files/refs.bib)
 - [Download the PDF example](files/DISCLab_slides_template.pdf)
 
-## Preview
-
-<iframe src="files/DISCLab_slides_template.pdf" width="100%" height="700px"></iframe>
-
 ## Usage
 
 - Use this template as a starting point for all presentations;

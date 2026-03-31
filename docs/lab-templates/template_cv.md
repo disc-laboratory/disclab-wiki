@@ -19,10 +19,6 @@ The template follows a clean, single-column layout with a conservative and reada
 - [Download the publications file](files/publications.bib)
 - [Download the PDF example](files/DISCLab_CV_format.pdf)
 
-## Preview
-
-<iframe src="files/DISCLab_CV_format.pdf" width="100%" height="700px"></iframe>
-
 ## Usage
 
 - Use this template as a starting point for your CV;

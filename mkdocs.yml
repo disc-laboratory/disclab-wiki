@@ -86,11 +86,29 @@ nav:
          - Visiting PhD student expectations: lab-manual/team-expectations/DISCLab_Visiting_PhD_student_expectations.md
   - Research Guidelines:
       - Overview: research-guidelines/index.md
-      - Project Structure: research-guidelines/project-structure.md
-      - Coding Standards: research-guidelines/coding-standards.md
-      - Dataset Management: research-guidelines/dataset-management.md
-      - Experiment Tracking: research-guidelines/experiment-tracking.md
-      - Naming Conventions: research-guidelines/naming-conventions.md
+      #- Project Structure: research-guidelines/project-structure.md
+      #- Coding Standards: research-guidelines/coding-standards.md
+      #- Dataset Management: research-guidelines/dataset-management.md
+      #- Experiment Tracking: research-guidelines/experiment-tracking.md
+      #- Naming Conventions: research-guidelines/naming-conventions.md
+  - Writing and Publications:
+      - Overview: lab-writing-publications/index.md
+      - Paper Formatting: lab-writing-publications/paper-formatting.md
+      - Internal Review Process: lab-writing-publications/internal-review-process.md
+      - Authorship Guidelines: lab-writing-publications/authorship-guidelines.md
+      - Conference vs Journal Strategy: lab-writing-publications/conference-vs-journal-strategy.md
+      - Writing Style Guidelines: lab-writing-publications/writing-style-guidelines.md
+      - Figure and Visualization Guidelines: lab-writing-publications/figure-and-visualization-guidelines.md
+      - Reproducibility and Reporting: lab-writing-publications/reproducibility-and-reporting.md
+      - Paper Checklist Before Submission: lab-writing-publications/paper-checklist-before-submission.md
+      - Reviewing Papers Guidelines: lab-writing-publications/reviewing-papers-guidelines.md
+      - Research Storytelling: lab-writing-publications/research-storytelling.md
+      - Publication Strategy Roadmap: lab-writing-publications/publication-strategy-roadmap.md
+  - Lab Templates:
+      - Overview: lab-templates/index.md
+      - DISCLab Slides Template: lab-templates/template_slides.md
+      - DISCLab CV Template: lab-templates/template_cv.md
+      - DISCLab Paper Template: lab-templates/template_paper.md
   #- Data Management:
   #    - Overview: data-management/index.md
   #    - Folder Hierarchy: data-management/folder-hierarchy.md
@@ -116,12 +134,7 @@ nav:
   #    - HoloLens Deployment: xr-development/hololens-deployment.md
   #    - ONNX Integration: xr-development/onnx-integration.md
   #    - Performance Constraints: xr-development/performance-constraints.md
-  - Writing and Publications:
-      - Overview: writing-publications/index.md
-      - Paper Templates: writing-publications/paper-templates.md
-      - Internal Review Process: writing-publications/internal-review-process.md
-      - Authorship Guidelines: writing-publications/authorship-guidelines.md
-      - Conference vs Journal Strategy: writing-publications/conference-vs-journal-strategy.md
+  
   #- Student Onboarding:
   #    - Overview: student-onboarding/index.md
   #    - First Week Checklist: student-onboarding/first-week-checklist.md
@@ -144,8 +157,4 @@ nav:
   #    - Reporting Expectations: admin-policies/reporting-expectations.md
   #    - Code Review Rules: admin-policies/code-review-rules.md
   #    - Data Ownership: admin-policies/data-ownership.md
-  - Lab Templates:
-      - Overview: lab-templates/index.md
-      - DISCLab Slides Template: lab-templates/template_slides.md
-      - DISCLab CV Template: lab-templates/template_cv.md
-      - DISCLab Paper Template: lab-templates/template_paper.md
+  
