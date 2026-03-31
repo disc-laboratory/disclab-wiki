@@ -1,0 +1,722 @@
+\documentclass[aspectratio=1610, 12pt]{beamer}
+
+\usepackage[backend=biber,style=authoryear]{biblatex} % To RUN LOCALLY CHANGE BACKEND BIBER TO THE BUILT OPTIONS
+\addbibresource{refs.bib} % Specify the path to your .bib file
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{media9}
+\usepackage{multimedia} % for embedding videos
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multimedia}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+% Theme configuration for UT Austin
+\usetheme{default}
+
+% Colors
+\definecolor{White}{RGB}{255,255,255}
+
+% Define the palette number (change this number to select a different palette)
+\def\palette{1} % Change this number to select different palettes (1 to 8)
+
+% Conditional setup for color palettes
+\ifnum\palette=1
+    % Palette 1: Navy Blue, Gray, and Dark Red
+    \definecolor{MainColorTheme}{RGB}{46, 59, 78} % Navy Blue
+    \definecolor{SecondaryColorTheme}{RGB}{125, 125, 125} % Gray
+    \definecolor{TertiaryColorTheme}{RGB}{168, 50, 50} % Dark Red
+\fi
+
+\ifnum\palette=2
+    % Palette 2: Dark Green, Gold, and Charcoal
+    \definecolor{MainColorTheme}{RGB}{47, 79, 79} % Dark Green
+    \definecolor{SecondaryColorTheme}{RGB}{218, 165, 32} % Gold
+    \definecolor{TertiaryColorTheme}{RGB}{51, 51, 51} % Charcoal
+\fi
+
+\ifnum\palette=3
+    % Palette 3: Midnight Blue, Silver, and Deep Teal
+    \definecolor{MainColorTheme}{RGB}{27, 58, 87} % Midnight Blue
+    \definecolor{SecondaryColorTheme}{RGB}{192, 192, 192} % Silver
+    \definecolor{TertiaryColorTheme}{RGB}{0, 123, 127} % Deep Teal
+\fi
+
+\ifnum\palette=4
+    % Palette 4: Forest Green, Slate Gray, and Burnt Orange
+    \definecolor{MainColorTheme}{RGB}{59, 107, 53} % Forest Green
+    \definecolor{SecondaryColorTheme}{RGB}{112, 128, 144} % Slate Gray
+    \definecolor{TertiaryColorTheme}{RGB}{191, 87, 0} % Burnt Orange
+\fi
+
+\ifnum\palette=5
+    % Palette 5: Royal Blue, Light Gray, and Burgundy
+    \definecolor{MainColorTheme}{RGB}{65, 105, 225} % Royal Blue
+    \definecolor{SecondaryColorTheme}{RGB}{211, 211, 211} % Light Gray
+    \definecolor{TertiaryColorTheme}{RGB}{128, 0, 32} % Burgundy
+\fi
+
+\ifnum\palette=6
+    % Palette 6: Dark Cyan, Taupe, and Burgundy
+    \definecolor{MainColorTheme}{RGB}{0, 139, 139} % Dark Cyan
+    \definecolor{SecondaryColorTheme}{RGB}{185, 165, 141} % Taupe
+    \definecolor{TertiaryColorTheme}{RGB}{128, 0, 0} % Burgundy
+\fi
+
+\ifnum\palette=7
+    % Palette 7: Oxford Blue, Light Steel Blue, and Amber
+    \definecolor{MainColorTheme}{RGB}{0, 33, 71} % Oxford Blue
+    \definecolor{SecondaryColorTheme}{RGB}{176, 196, 222} % Light Steel Blue
+    \definecolor{TertiaryColorTheme}{RGB}{255, 191, 0} % Amber
+\fi
+
+\ifnum\palette=8
+    % Palette 8: Steel Blue, Cool Gray, and Brick Red
+    \definecolor{MainColorTheme}{RGB}{70, 130, 180} % Steel Blue
+    \definecolor{SecondaryColorTheme}{RGB}{138, 141, 143} % Cool Gray
+    \definecolor{TertiaryColorTheme}{RGB}{178, 34, 34} % Brick Red
+\fi
+
+
+% Set default color for titles and bullet points to Dark Orange (including the contents)
+\setbeamercolor{frametitle}{fg=MainColorTheme}
+\setbeamercolor{section in toc}{fg=MainColorTheme}
+
+% Set bullet point symbols to Dark Orange, and text to Black
+\setbeamercolor{item}{fg=MainColorTheme} % Bullet point symbols
+\setbeamercolor{itemize/enumerate body}{fg=black} % Bullet point text
+\setbeamercolor{itemize/enumerate subbody}{fg=black}
+
+% Adjust the position of slide titles
+\setbeamertemplate{frametitle}{
+    \vspace{-0.7cm} % Adjust this value to move the title up or down
+    \insertframetitle
+}
+% Customize figure caption format removing Figure
+%\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+% Customize figure caption format with Dark Orange "Figure: ", numbering and caption size
+\setbeamertemplate{caption}{
+    \raggedright
+    %\small
+    \footnotesize 
+    %\scriptsize 
+    %\tiny
+    \textcolor{MainColorTheme}{\insertcaptionname~\insertcaptionnumber:}~\insertcaption
+}
+
+% Customize reference slide caption format
+\setbeamercolor{bibliography item}{fg=black}
+\setbeamercolor{bibliography entry author}{fg=MainColorTheme}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=MainColorTheme}
+\setbeamercolor{bibliography entry note}{fg=MainColorTheme}
+
+
+
+
+% Title slide setup
+%\setbeamertemplate{title page}{
+%    % [T] aligns the tops of the columns, preventing the "push down" effect
+%    \begin{columns}[T,onlytextwidth]
+%            
+%            \begin{column}{0.70\textwidth} % Left column
+%               \vspace{.2cm}
+%                \textcolor{MainColorTheme}{\textbf{\small MONTH 20XX}} \\
+%                \vspace{1.5cm}
+%                \textcolor{MainColorTheme}{\textbf{\Huge INSERT YOUR HEADLINE HERE UP TO 3 LINES}} \\
+%                \vspace{.1cm}
+%                \textcolor{MainColorTheme}{\rule{\linewidth}{0.1mm}} \\
+%                \vspace{.2cm}
+%                \textcolor{MainColorTheme}{Insert your subtitle or any additional description text here up to two lines of text or you can delete this text box} \\
+%                \vspace{0.7cm}
+%                \textcolor{MainColorTheme}{\textbf{\small Presenter or Speaker Name} \\ \small Position/Role, The University of Texas at Austin}
+%            \end{column}
+%
+%            \begin{column}{0.3\textwidth} % Right column
+%                % Use negative vspace to pull logos UP to the top edge
+%                % Use positive vspace to push them DOWN
+%                \vspace{0.1cm} 
+%               \hfill
+%                % The zero-width box allows the logos to expand leftwards freely
+%                \makebox[0pt][r]{%
+%                    % First Logo (NTU)
+%                    %\includegraphics[width=5cm, keepaspectratio]{brand/ntu_cee_logo_navy.pdf}%
+%                    %\includegraphics[width=4cm, keepaspectratio]{brand/DISC_NTU_full_names.png}%
+%                    \includegraphics[width=5cm, keepaspectratio]{brand/DISC_NTU_full_names_vertical.png}%
+%                    %\includegraphics[width=5cm, keepaspectratio]{brand/DISC_NTU_full_names_vertical_2.png}%
+%                    %\includegraphics[width=5cm, keepaspectratio]{brand/DISC_NTU_full_names_vertical_3.png}%
+%                    %\includegraphics[width=9cm, keepaspectratio]{brand/DISC_NTU_full_names_horizontal.png}%
+%                    %\hspace{0.1cm} 
+%                    % Second Logo (DISC)
+%                    %\includegraphics[width=.93cm, keepaspectratio]{brand/logo_disc_0001_500px.png}%
+%                    %\includegraphics[width=.93cm, keepaspectratio]{brand/DISC_fullname.png}%
+%                }
+%            \end{column}
+%        
+%    \end{columns}
+%}
+
+% Requires in preamble:
+% \usepackage{tikz}
+% \usetikzlibrary{calc}
+
+% ---- Title slide setup (original layout, with background + new logo placement) ----
+\setbeamertemplate{title page}{
+\begin{tikzpicture}[remember picture,overlay]
+    % Background image (full bleed)
+    \node[anchor=center] at (current page.center) {%
+        \includegraphics[width=\paperwidth,height=\paperheight]{brand/background_titlepage.png}%
+    };
+\end{tikzpicture}
+
+% Foreground content (keep your original columns to preserve exact spacing)
+\begin{columns}[T,onlytextwidth]
+
+    % -------- Left column (TEXT) --------
+    \begin{column}{0.70\textwidth}
+        % Keep the original spacing, BUT remove the month here (we'll place it bottom-right)
+        \vspace{.2cm}
+
+        \vspace{1.5cm}
+        \textcolor{MainColorTheme}{\textbf{\Huge INSERT YOUR HEADLINE HERE UP TO 3 LINES}}\\
+        \vspace{.1cm}
+        \textcolor{MainColorTheme}{\rule{\linewidth}{0.1mm}}\\
+        \vspace{.2cm}
+        \textcolor{MainColorTheme}{Insert your subtitle or any additional description text here up to two lines of text or you can delete this text box}\\
+        \vspace{0.7cm}
+        \textcolor{MainColorTheme}{\textbf{\small Presenter or Speaker Name}\\ \small Position/Role, Nanyang Technological University, Singapore}
+    \end{column}
+
+    % -------- Right column (empty; we place logos with overlay to control exact position) --------
+    \begin{column}{0.30\textwidth}
+        \vspace{0.1cm}
+        % Intentionally left empty to avoid fighting with overlay positioning
+    \end{column}
+
+\end{columns}
+
+% ---- Overlay: logos + month bottom-right (new design placement) ----
+\begin{tikzpicture}[remember picture,overlay]
+
+    % Top-left NTU logo (new design)
+    \node[anchor=north west] at ([xshift=1.05cm,yshift=-0.65cm]current page.north west) {%
+        \includegraphics[height=0.85cm]{brand/NTU_fullname.pdf}%
+    };
+
+    % Top-right DISC Lab logo (new design)
+    \node[anchor=north east] at ([xshift=-1.05cm,yshift=-0.65cm]current page.north east) {%
+        \includegraphics[height=0.85cm]{brand/DISC_fullname.pdf}%
+    };
+
+    % Month/Year at bottom-right
+    \node[anchor=south east] at ([xshift=-1.05cm,yshift=0.75cm]current page.south east) {%
+        \textcolor{MainColorTheme}{\textbf{\small MONTH 20XX}}%
+    };
+
+\end{tikzpicture}
+}
+
+
+%\setbeamertemplate{title page}{
+%\begin{tikzpicture}[remember picture,overlay]
+%    % --- Full-bleed background image ---
+%    \node[anchor=center] at (current page.center) {%
+%        \includegraphics[width=\paperwidth,height=\paperheight]{brand/background_titlepage.png}%
+%    };
+%    % --- Left vertical accent bar ---
+%    \fill[MainColorTheme] (current page.north west) rectangle ([xshift=1.15cm]current page.south west);
+%    % --- Thin accent line inside the bar ---
+%    \fill[TertiaryColorTheme]
+%       ([xshift=1.03cm,yshift=-0.8cm]current page.north west)
+%        rectangle
+%        ([xshift=1.06cm,yshift=0.8cm]current page.south west);
+%    % --- Vertical date text (centered in the bar; no clipping) ---
+%    \node[rotate=90, anchor=center, text=White] at ([xshift=0.58cm]current page.west) {%
+%        \bfseries\small MONTH 20XX
+%    };
+%    % --- Logos band (top row, aligned + anchored) ---
+%    \node[anchor=north west] at ([xshift=1.65cm,yshift=-0.55cm]current page.north west) {%
+%        \includegraphics[height=0.85cm]{brand/NTU_fullname.png}%
+%    };
+%    \node[anchor=north east] at ([xshift=-1.20cm,yshift=-0.55cm]current page.north east) {%
+%        \includegraphics[height=0.85cm]{brand/DISC_fullname.png}%
+%    };
+%    % --- Title block (reduced size + controlled line breaks) ---
+%    \node[anchor=north west, text width=0.72\paperwidth] at
+%        ([xshift=1.65cm,yshift=-2.05cm]current page.north west) {%
+%        \raggedright
+%        {\color{MainColorTheme}\bfseries\fontsize{38}{40}\selectfont
+%            INSERT YOUR\\
+%            HEADLINE\\
+%            HERE
+%        }\par\vspace{0.40cm}
+%
+%        {\color{MainColorTheme}\fontsize{15}{20}\selectfont
+%            Insert your subtitle or any additional description text here up to two lines.
+%        }\par
+%    };
+%    % --- Speaker block (separate node, pinned near bottom-left; never off-canvas) ---
+%    \node[anchor=south west, text width=0.72\paperwidth] at
+%        ([xshift=1.65cm,yshift=0.80cm]current page.south west) {%
+%        \raggedright
+%        {\color{MainColorTheme}\bfseries\fontsize{13}{16}\selectfont Presenter Name}\par
+%        {\color{MainColorTheme}\fontsize{11.5}{14}\selectfont Position/Role, Nanyang Technological University}
+%    };
+%\end{tikzpicture}
+%}
+
+
+
+\newcommand{\setHeadlineText}[1]{
+	\def\currentHeadlineText{#1}
+}
+% Header for subsequent slides with orange background
+\setbeamertemplate{headline}{
+    \begin{columns}[onlytextwidth]
+        % Left Column (70% with Dark Orange Background)
+        \begin{column}{0.7\textwidth}
+            \vspace{-0.8cm}
+            \begin{beamercolorbox}[wd=\paperwidth,ht=1.5cm,dp=0cm,center,sep=0pt]{palette primary}
+                \usebeamercolor[bg]{palette primary}
+                \vspace{.1cm}
+                \hspace{-8.cm}
+                %\includegraphics[height=.5cm]{brand/BGPR_white_horizontal.pdf} % Add the white logo here
+                \includegraphics[height=.5cm]{brand/ntu_cee_logo_white.pdf} % Add the white logo here
+                \hspace{0.1cm} \includegraphics[height=.55cm]{brand/DISC_fullname_white.pdf} % Add the white logo here
+                %\hspace{0.1cm} \includegraphics[height=.5cm]{brand/logo_disc_0001_white_500px.png} % Add the white logo here
+            \end{beamercolorbox}
+        \end{column}
+        % Right Column (30% with Light Orange Background)
+        \begin{column}{0.3\textwidth}
+            \vspace{-.8cm}
+            \begin{beamercolorbox}[wd=\paperwidth,ht=1.5cm,dp=0cm,center,sep=0pt]{palette secondary}
+                \vspace{.275cm}
+                \hspace{-10.3cm}
+                \textcolor{White}{\textbf{\tiny Digital Intelligence for Structures and Construction}}
+                %\textcolor{White}{\textbf{\footnotesize \vspace{-0.1cm} \currentHeadlineText}}                
+            \end{beamercolorbox}
+        \end{column}
+    \end{columns}
+    \vspace{1.5cm}
+}
+
+% Define the beamer color boxes for custom colors
+\setbeamercolor{palette primary}{bg=MainColorTheme,fg=White}
+\setbeamercolor{palette secondary}{bg=SecondaryColorTheme,fg=White}
+
+% General slide setup
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+
+
+
+%HERE STARTS THE PRESENTATION SLIDES
+
+\begin{document}
+
+% Initial Slide
+\begin{frame}[plain]    
+    \titlepage
+\end{frame}
+
+% Table of Contents Slide
+\begin{frame}{Table of Contents}
+    \tableofcontents
+\end{frame}
+
+% Example Slide new section
+\begin{frame}
+    % Slide content goes here
+    \begin{center}
+        \textcolor{black}{\Huge Your Content Here}
+    \end{center}
+\end{frame}
+
+% Example Slide new section
+\begin{frame}
+    % Slide content goes here
+    \begin{center}
+        \textcolor{TertiaryColorTheme}{\Huge Your Content Here}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    % Slide content goes here
+    \begin{center}
+        \textcolor{MainColorTheme}{\Huge Your Content Here}
+    \end{center}
+\end{frame}
+
+% Section Divider Slide
+\begin{frame}[plain]
+    \vfill
+    \centering
+    \textcolor{MainColorTheme}{\Huge Section Title}
+    \vfill
+\end{frame}
+
+% Slide with Bullet Points
+\begin{frame}{Your Slide Title}
+    \begin{itemize}
+        \item Bullet point 1
+        \item Bullet point 2
+        \item Bullet point 3
+        \item Bullet point 4
+    \end{itemize}
+\end{frame}
+
+%  Slide with Two Columns (Bullet Points and an Image with Caption)
+\begin{frame}{Your Slide Title}
+    \begin{columns}
+        % Left Column with Bullet Points
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Bullet point 1
+                \item Bullet point 2
+                \item Bullet point 3
+            \end{itemize}
+        \end{column}
+        
+        % Right Column with Image and Caption
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=0.8\textwidth]{figures/image0.png}
+                \caption{Your Image Caption}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Bulletpoints at left and three images to the right
+\begin{frame}{Slide Title}
+    \begin{columns}
+        % Left Column with Bullet Points
+        \begin{column}{0.3\textwidth}
+            \begin{itemize}
+                \item Bullet point 1
+                \item Bullet point 2
+                \item Bullet point 3
+                \item Bullet point 4
+            \end{itemize}
+        \end{column}
+        
+        % Right Column with Three Images Side by Side
+        \begin{column}{0.7\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.32\textwidth]{figures/image1.png}
+                \includegraphics[width=0.32\textwidth]{figures/image2.png}
+                \includegraphics[width=0.32\textwidth]{figures/image3.png}
+                \caption{Image captions can be placed below or omitted.}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+% Image-Only Slide with Caption at the Bottom
+\begin{frame}{Your Slide Title}
+    \begin{figure}
+        \includegraphics[height=0.45\textwidth]{figures/image1.png}
+        \caption{Your Image Caption}
+    \end{figure}
+\end{frame}
+
+% Full-Image Slide
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{figures/sample_full_image.png}
+    \end{figure}
+\end{frame}
+
+
+% Two Images Side by Side with Captions at the Bottom
+\begin{frame}{Your Slide Title}
+    \begin{columns}
+        % Left Image
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=.66\textwidth]{figures/image2.png}
+                \caption{Caption for Image 1}
+            \end{figure}
+        \end{column}
+        
+        % Right Image
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=.66\textwidth]{figures/image3.png}
+                \caption{Caption for Image 2}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Three Images Side by Side with Captions at the Bottom
+\begin{frame}{Your Slide Title}
+    \begin{columns}
+        % Left Image
+        \begin{column}{0.33\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{figures/image4.png}
+                \caption{Caption for Image 1}
+            \end{figure}
+        \end{column}
+        
+        % Middle Image
+        \begin{column}{0.33\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{figures/image5.png}
+                \caption{Caption for Image 2}
+            \end{figure}
+        \end{column}
+        
+        % Right Image
+        \begin{column}{0.33\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{figures/image6.png}
+                \caption{Caption for Image 3}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Three images as one figure
+\begin{frame}{Slide Title}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.32\textwidth]{figures/image1.png}
+        \includegraphics[width=0.32\textwidth]{figures/image2.png}
+        \includegraphics[width=0.32\textwidth]{figures/image3.png}
+        \caption{Image captions can be placed below or omitted.}
+    \end{figure}
+\end{frame}
+
+% Figure with 2 rows of 3 images
+\begin{frame}{Slide Title}
+    \begin{figure}
+        \centering
+        % First Row of Images
+        \includegraphics[width=0.2\textwidth]{figures/image1.png} \hspace{0.1cm}
+        \includegraphics[width=0.2\textwidth]{figures/image2.png} \hspace{0.1cm}
+        \includegraphics[width=0.2\textwidth]{figures/image3.png} 
+        \vspace{0.1cm} % Space between the rows        
+        
+        % Second Row of Images
+        \includegraphics[width=0.2\textwidth]{figures/image4.png} \hspace{0.1cm}
+        \includegraphics[width=0.2\textwidth]{figures/image5.png} \hspace{0.1cm}
+        \includegraphics[width=0.2\textwidth]{figures/image6.png}
+        \caption{Caption for the entire figure, describing all images}
+    \end{figure}
+\end{frame}
+
+% Image at top, four images at bottom
+\begin{frame}{Slide Title}
+    \begin{figure}
+        % Top Image
+        \centering
+        \includegraphics[height=0.25\textheight]{figures/image0.png}
+        \caption{Top Image Caption (optional)}
+    \end{figure}
+
+    %\vspace{0.5cm} % Space between the top image and the bottom row of images
+
+    \begin{figure}
+        % Bottom Images Side by Side
+        \centering
+        \includegraphics[width=0.23\textwidth]{figures/image1.png}
+        \includegraphics[width=0.23\textwidth]{figures/image2.png}
+        \includegraphics[width=0.23\textwidth]{figures/image3.png}
+        \includegraphics[width=0.23\textwidth]{figures/image4.png}
+        \caption{Bottom Images Caption (optional)}
+    \end{figure}
+\end{frame}
+
+
+% Video Slide
+\begin{frame}{Video Demonstration}
+    \begin{center}
+        \includemedia[
+            width=0.5\linewidth,
+            height=0.3\linewidth,
+            activate=onclick,
+            addresource=videos/sample-video.mp4,
+            flashvars={
+               source=videos/sample-video.mp4
+              &autoPlay=true
+              &loop=true
+            }
+        ]{}{VPlayer.swf}
+        \vspace{0.5cm}
+        \textcolor{black}{A brief demonstration video.}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Video Demonstration}
+    \frametitle{Video Demonstration}
+    \href{run:videos/sample-video.mp4}{\beamergotobutton{Play Video}}
+    \newline
+    \textbf{A brief demonstration video.}
+\end{frame}
+
+\begin{frame}{Video Example}
+    \movie[width=0.6\textwidth,height=0.4\textwidth,showcontrols]{}{videos/sample-video.mp4}
+\end{frame}
+
+% Example Table Slide
+\begin{frame}{Table Slide Example}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+            \hline
+            Row 1, Col 1 & Row 1, Col 2 & Row 1, Col 3 \\
+            \hline
+            Row 2, Col 1 & Row 2, Col 2 & Row 2, Col 3 \\
+            \hline
+            Row 3, Col 1 & Row 3, Col 2 & Row 3, Col 3 \\
+            \hline
+        \end{tabular}
+        \caption{Example of a Table in a Slide}
+    \end{table}
+\end{frame}
+
+% Image to a Table in LaTeX
+\begin{frame}{Table with an Image}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+            \hline
+            Row 1, Col 1 & \includegraphics[width=1.cm]{figures/image0.png} & Row 1, Col 3 \\
+            \hline
+            Row 2, Col 1 & Row 2, Col 2 & Row 2, Col 3 \\
+            \hline
+            Row 3, Col 1 & Row 3, Col 2 & Row 3, Col 3 \\
+            \hline
+        \end{tabular}
+        \caption{Table with an Image in One Cell}
+    \end{table}
+\end{frame}
+
+% Data/Statistics Slide
+\begin{frame}{Key Statistics}
+    \begin{itemize}
+        \item \textbf{Stat 1:} 85\% of participants found the program beneficial.
+        \item \textbf{Stat 2:} The average improvement was 25\% over six months.
+        \item \textbf{Stat 3:} 75\% of users reported higher satisfaction.
+    \end{itemize}
+    \vspace{1cm}
+    \centering
+    \textcolor{MainColorTheme}{\large Data Source: \textit{Your Data Source}}
+\end{frame}
+
+% Chart/Graph Slide
+\begin{frame}{Performance Over Time}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{figures/sample_chart.jpg}
+        \caption{Performance trends across the quarters.}
+    \end{figure}
+\end{frame}
+
+% Process/Timeline Slide
+\begin{frame}{Project Timeline}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \textbf{Phase 1} & \textbf{Phase 2} & \textbf{Phase 3} & \textbf{Phase 4} \\
+            \hline
+            January & March & May & July \\
+            Planning & Development & Testing & Launch \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \vspace{0.5cm}
+    \centering
+    \textcolor{MainColorTheme}{\large Key Milestones in the Project Lifecycle}
+\end{frame}
+
+
+% Adding Footnotes in Beamer Slides
+\begin{frame}{Slide with Footnotes}
+    Some important information is presented here.\footnote{This is a footnote explaining something important.}
+    
+    \begin{itemize}
+        \item First point
+        \item Second point\footnote{This footnote explains the second point.}
+    \end{itemize}
+\end{frame}
+
+% Text and Quote Slide
+\begin{frame}{Key Point}
+    \begin{quote}
+        \textcolor{MainColorTheme}{\large "This is a key quote that supports the presentation. It can be something profound, insightful, or important."}
+    \end{quote}
+    \hfill \\
+    \raggedleft \textcolor{black}{\small -- Author Name or Source}
+\end{frame}
+
+% Quote or Testimonial Slide
+\begin{frame}{Testimonial}
+    \begin{quote}
+        \textcolor{MainColorTheme}{\large "This service has greatly improved our efficiency and productivity. Highly recommend!"}
+    \end{quote}
+    \vspace{1cm}
+    \raggedleft \textcolor{black}{\small -- Jane Doe, CEO of Example Corp.}
+\end{frame}
+
+
+
+% Cite Sources in Your Document
+\begin{frame}{Citing Sources in LaTeX}
+    This is a statement that requires citation.~\cite{author2023}
+\end{frame}
+
+% Thank You/Conclusion Slide
+\begin{frame}%[plain]
+    \vfill
+    \centering
+    \textcolor{MainColorTheme}{\Huge Thank you!}
+    \vfill
+    \textcolor{black}{\large Any questions?}
+\end{frame}
+
+% Q&A Slide
+\begin{frame}[plain]
+    \vfill
+    \centering
+    \textcolor{MainColorTheme}{\Huge Questions?}
+    \vfill
+\end{frame}
+
+
+% Contact Information Slide
+\begin{frame}{Contact Information}
+    \textcolor{MainColorTheme}{\large Name:} \textcolor{black}{Name LastName} \\
+    \textcolor{MainColorTheme}{\large Email:} \textcolor{black}{name.lastname@utexas.edu} \\
+    \textcolor{MainColorTheme}{\large Phone:} \textcolor{black}{+123 456 7890} \\
+    \textcolor{MainColorTheme}{\large Website:} \textcolor{black}{www.name-lastname.com} \\
+    \vspace{1cm}
+    \textcolor{MainColorTheme}{\large Social Media:}
+    \textcolor{black}{
+        \href{https://www.linkedin.com/in/username}{LinkedIn} \quad
+        \href{https://twitter.com/username}{Twitter} \quad
+        \href{https://github.com/username}{GitHub}
+    }
+\end{frame}
+
+
+% Add a Bibliography Section
+\begin{frame}{References}
+    %\frametitle{References}
+    \printbibliography
+\end{frame}
+
+\end{document}
