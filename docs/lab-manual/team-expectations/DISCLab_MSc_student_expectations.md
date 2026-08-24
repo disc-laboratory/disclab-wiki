@@ -331,15 +331,3 @@ The supervisor is committed to providing appropriate academic guidance, construc
 In return, the MSc student is expected to engage seriously with the project, make responsible use of the available supervision and resources, communicate openly, work consistently toward the agreed objectives and dissertation, and uphold the standards outlined above.
 
 Successful MSc research requires effort from both student and supervisor. Clear communication, realistic planning, intellectual engagement, and timely response to difficulties are therefore considered shared foundations of the supervisory relationship.
-
----
-
-\section*{Acknowledgement}
-
-I confirm that I have read and understood this document. I understand that it summarizes the working expectations associated with conducting my MSc research within DISCLab and is intended to support clarity and alignment at the beginning of the research project.
-
-**Student Name:**
-
-**Signature:** ____________________
-
-**Date:** ____________________
