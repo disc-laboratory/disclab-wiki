@@ -361,8 +361,3 @@ The value of a visiting scholar appointment should therefore be measured not onl
 
 I confirm that I have read and understood this document. I understand that it summarizes the working expectations associated with my visiting scholar appointment in DISCLab and is intended to support clarity and alignment before or at the start of the research visit.
 
-**Visiting Scholar Name:**
-
-**Signature:** ____________________
-
-**Date:** ____________________
