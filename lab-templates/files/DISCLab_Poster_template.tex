@@ -1,0 +1,581 @@
+\documentclass[final]{beamer}
+
+% =========================================================
+% POSTER FORMAT
+% =========================================================
+% A0 portrait:
+\usepackage[
+    orientation=portrait,
+    size=a0,
+    scale=1.00
+]{beamerposter}
+
+% =========================================================
+% PACKAGES
+% =========================================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{ifthen}
+
+% =========================================================
+% DISC LAB COLOUR PALETTE
+% =========================================================
+\definecolor{discnavy}{HTML}{1F2937}
+\definecolor{discteal}{HTML}{2DD4BF}
+\definecolor{discdarkteal}{HTML}{0F766E}
+\definecolor{disclight}{HTML}{E5E7EB}
+\definecolor{discsoft}{HTML}{F8FAFC}
+\definecolor{discgray}{HTML}{6B7280}
+\definecolor{discbluegray}{HTML}{334155}
+\definecolor{ntucrimson}{HTML}{C8102E}
+
+% =========================================================
+% POSTER INFORMATION
+% =========================================================
+\title{Poster title}
+\author{Author names}
+\institute{%
+Digital Intelligence for Structures and Construction Laboratory\\
+School of Civil and Environmental Engineering\\
+Nanyang Technological University, Singapore
+}
+
+% Replace these names with the actual logo filenames.
+\newcommand{\disclogofile}{disc_lab_logo_white.pdf}
+\newcommand{\ntulogofile}{ntu_logo_white.pdf}
+
+% =========================================================
+% TYPOGRAPHY
+% =========================================================
+\setbeamerfont{title}{
+    series=\bfseries,
+    size=\fontsize{48}{54}
+}
+
+\setbeamerfont{author}{
+    series=\bfseries,
+    size=\fontsize{24}{29}
+}
+
+\setbeamerfont{institute}{
+    size=\fontsize{18}{23}
+}
+
+\setbeamerfont{block title}{
+    series=\bfseries,
+    size=\fontsize{25}{30}
+}
+
+\setbeamerfont{block body}{
+    size=\fontsize{18}{23}
+}
+
+\setbeamerfont{caption}{
+    size=\fontsize{15}{19}
+}
+
+% =========================================================
+% BEAMER COLOURS
+% =========================================================
+\setbeamercolor{background canvas}{
+    bg=white
+}
+
+\setbeamercolor{normal text}{
+    fg=discnavy,
+    bg=white
+}
+
+\setbeamercolor{headline}{
+    fg=white,
+    bg=discnavy
+}
+
+\setbeamercolor{footline}{
+    fg=white,
+    bg=discnavy
+}
+
+\setbeamercolor{block title}{
+    fg=white,
+    bg=discnavy
+}
+
+\setbeamercolor{block body}{
+    fg=discnavy,
+    bg=discsoft
+}
+
+\setbeamercolor{block title alerted}{
+    fg=discnavy,
+    bg=discteal
+}
+
+\setbeamercolor{block body alerted}{
+    fg=discnavy,
+    bg=white
+}
+
+\setbeamercolor{block title example}{
+    fg=white,
+    bg=discdarkteal
+}
+
+\setbeamercolor{block body example}{
+    fg=discnavy,
+    bg=white
+}
+
+% =========================================================
+% GENERAL FORMATTING
+% =========================================================
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+\setbeamersize{
+    text margin left=1.4cm,
+    text margin right=1.4cm
+}
+
+\setlength{\parskip}{0.35em}
+\setlength{\columnsep}{1.0cm}
+
+\setbeamertemplate{itemize item}{
+    \color{discteal}\raisebox{0.20ex}{\Large$\blacktriangleright$}
+}
+
+\setbeamertemplate{itemize subitem}{
+    \color{discdarkteal}\raisebox{0.15ex}{\large$\bullet$}
+}
+
+\setbeamertemplate{enumerate item}{
+    \color{discdarkteal}\insertenumlabel.
+}
+
+% =========================================================
+% LOGO COMMAND
+% =========================================================
+\newcommand{\posterlogo}[2]{%
+    \IfFileExists{#1}{%
+        \includegraphics[
+            width=#2,
+            height=6.5cm,
+            keepaspectratio
+        ]{#1}
+    }{%
+        \fcolorbox{white}{discnavy}{%
+            \begin{minipage}[c][5.4cm][c]{#2}
+                \centering
+                \color{white}
+                \bfseries
+                Logo placeholder
+            \end{minipage}
+        }
+    }%
+}
+
+% =========================================================
+% IMAGE PLACEHOLDER
+% =========================================================
+\newcommand{\imgplaceholder}[2]{%
+    \fcolorbox{discgray}{white}{%
+        \begin{minipage}[c][#1][c]{0.96\linewidth}
+            \centering
+
+            {\fontsize{23}{27}\selectfont
+            \color{discgray}
+            \bfseries
+            IMAGE PLACEHOLDER}
+
+            \vspace{0.35cm}
+
+            {\fontsize{16}{20}\selectfont
+            \color{discgray}
+            #2}
+        \end{minipage}
+    }
+}
+
+% =========================================================
+% FIGURE COMMAND
+% =========================================================
+% Usage:
+% \posterfigure{filename}{height}{caption}
+%
+% The placeholder appears automatically when the file is absent.
+\newcommand{\posterfigure}[3]{%
+    \begin{center}
+        \IfFileExists{#1}{%
+            \includegraphics[
+                width=\linewidth,
+                height=#2,
+                keepaspectratio
+            ]{#1}
+        }{%
+            \imgplaceholder{#2}{Expected file: \texttt{#1}}
+        }
+
+        \vspace{0.20cm}
+
+        \begin{minipage}{0.96\linewidth}
+            \centering
+            \fontsize{15}{19}\selectfont
+            \color{discgray}
+            #3
+        \end{minipage}
+    \end{center}
+}
+
+% =========================================================
+% SECTION BANNER
+% =========================================================
+\newcommand{\sectionbanner}[1]{%
+    \begin{beamercolorbox}[
+        wd=\linewidth,
+        sep=0.55cm,
+        rounded=true
+    ]{block title}
+        \centering
+        \fontsize{27}{32}\selectfont
+        \bfseries
+        #1
+    \end{beamercolorbox}
+}
+
+% =========================================================
+% HEADER
+% =========================================================
+\setbeamertemplate{headline}{%
+    \begin{beamercolorbox}[
+        wd=\paperwidth,
+        ht=10.8cm,
+        dp=0cm
+    ]{headline}
+
+        \vspace{0.9cm}
+
+        \begin{columns}[
+            T,
+            totalwidth=0.95\paperwidth
+        ]
+
+            \begin{column}{0.20\paperwidth}
+                \centering
+                \posterlogo{\disclogofile}{20cm}
+            \end{column}
+
+            \begin{column}{0.55\paperwidth}
+                \centering
+
+                {\usebeamerfont{title}
+                \color{white}
+                \inserttitle\par}
+
+                \vspace{0.55cm}
+
+                {\usebeamerfont{author}
+                \color{discteal}
+                \insertauthor\par}
+
+                \vspace{0.35cm}
+
+                {\usebeamerfont{institute}
+                \color{white}
+                \insertinstitute\par}
+            \end{column}
+
+            \begin{column}{0.20\paperwidth}
+                \centering
+                \posterlogo{\ntulogofile}{20.5cm}
+            \end{column}
+
+        \end{columns}
+
+        \vspace{0.7cm}
+
+        \begin{beamercolorbox}[
+            wd=\paperwidth,
+            ht=0.28cm,
+            dp=0cm
+        ]{block title alerted}
+        \end{beamercolorbox}
+
+    \end{beamercolorbox}
+}
+
+% =========================================================
+% FOOTER
+% =========================================================
+\setbeamertemplate{footline}{%
+    \begin{beamercolorbox}[
+        wd=\paperwidth,
+        ht=2.2cm,
+        dp=0.7cm,
+        leftskip=1.5cm,
+        rightskip=1.5cm
+    ]{footline}
+
+        \vspace{0.45cm}
+
+        \fontsize{16}{20}\selectfont
+        \textbf{DISC Lab}
+        \hfill
+        \texttt{disclab.pantoja-rosero.com}
+        \hfill
+        \texttt{bryan.pr@ntu.edu.sg}
+
+    \end{beamercolorbox}
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+\begin{document}
+
+\begin{frame}[t]
+
+\vspace{0.65cm}
+
+% ---------------------------------------------------------
+% FULL-WIDTH OPENING SECTION
+% ---------------------------------------------------------
+\begin{alertblock}{Research context and central message}
+    \justifying
+
+    Introduce the engineering problem and explain why the research is
+    relevant. This section should normally contain two or three concise
+    sentences.
+
+    State the central contribution of the research clearly. A reader
+    should understand the main message of the poster without reading
+    the remaining sections.
+\end{alertblock}
+
+\vspace{0.45cm}
+
+% ---------------------------------------------------------
+% FULL-WIDTH OVERVIEW FIGURE
+% ---------------------------------------------------------
+\begin{block}{Research framework}
+    \justifying
+
+    Briefly introduce the common methodological framework or the
+    relationship among the research components.
+
+    \posterfigure
+        {figures/research_framework.png}
+        {14cm}
+        {Overview of the research framework and its principal outputs.}
+\end{block}
+
+\vspace{0.45cm}
+
+% ---------------------------------------------------------
+% TWO-COLUMN VERTICAL BODY
+% ---------------------------------------------------------
+\begin{columns}[t,totalwidth=\textwidth]
+
+    % =====================================================
+    % LEFT COLUMN
+    % =====================================================
+    \begin{column}{0.485\textwidth}
+
+        \begin{block}{Research component 1}
+            \justifying
+
+            Introduce the first research component in two or three
+            sentences. Emphasise its input, methodology, output, and
+            intended engineering use.
+
+            \posterfigure
+                {figures/component_01.png}
+                {13cm}
+                {Suggested caption for research component 1.}
+        \end{block}
+
+        \begin{block}{Research component 2}
+            \justifying
+
+            Introduce the second research component. Keep the text
+            focused on the specific engineering problem addressed and
+            the technological contribution.
+
+            \posterfigure
+                {figures/component_02.png}
+                {13cm}
+                {Suggested caption for research component 2.}
+        \end{block}
+
+        \begin{block}{Research component 3}
+            \justifying
+
+            Introduce the third research component and explain how it
+            extends or complements the previous work.
+
+            \posterfigure
+                {figures/component_03.png}
+                {13cm}
+                {Suggested caption for research component 3.}
+        \end{block}
+
+    \end{column}
+
+    % =====================================================
+    % RIGHT COLUMN
+    % =====================================================
+    \begin{column}{0.485\textwidth}
+
+        \begin{block}{Research component 4}
+            \justifying
+
+            Introduce the fourth research component in two or three
+            sentences. Highlight the interaction between digital data
+            and engineering practice.
+
+            \posterfigure
+                {figures/component_04.png}
+                {13cm}
+                {Suggested caption for research component 4.}
+        \end{block}
+
+        \begin{block}{Research component 5}
+            \justifying
+
+            Introduce the fifth research component. Describe its
+            operational or field-level relevance.
+
+            \posterfigure
+                {figures/component_05.png}
+                {13cm}
+                {Suggested caption for research component 5.}
+        \end{block}
+
+        \begin{block}{Research component 6}
+            \justifying
+
+            Introduce the sixth research component and connect it to
+            engineering analysis, decision support, or automation.
+
+            \posterfigure
+                {figures/component_06.png}
+                {13cm}
+                {Suggested caption for research component 6.}
+        \end{block}
+
+    \end{column}
+
+\end{columns}
+
+\vspace{0.45cm}
+
+% ---------------------------------------------------------
+% FULL-WIDTH IMPACT SECTION
+% ---------------------------------------------------------
+\begin{exampleblock}{Engineering applications and impact}
+
+    \begin{columns}[t,totalwidth=\linewidth]
+
+        \begin{column}{0.24\linewidth}
+            \centering
+            \textbf{Inspection}
+
+            \vspace{0.2cm}
+
+            Objective and traceable
+            condition assessment.
+        \end{column}
+
+        \begin{column}{0.24\linewidth}
+            \centering
+            \textbf{Asset management}
+
+            \vspace{0.2cm}
+
+            Structured digital records
+            of existing assets.
+        \end{column}
+
+        \begin{column}{0.24\linewidth}
+            \centering
+            \textbf{Maintenance}
+
+            \vspace{0.2cm}
+
+            Better documentation and
+            intervention planning.
+        \end{column}
+
+        \begin{column}{0.24\linewidth}
+            \centering
+            \textbf{Engineering analysis}
+
+            \vspace{0.2cm}
+
+            Digital information linked
+            to computational models.
+        \end{column}
+
+    \end{columns}
+
+\end{exampleblock}
+
+\vspace{0.45cm}
+
+% ---------------------------------------------------------
+% CONCLUSION AND OUTPUTS
+% ---------------------------------------------------------
+\begin{columns}[t,totalwidth=\textwidth]
+
+    \begin{column}{0.56\textwidth}
+
+        \begin{alertblock}{Conclusion}
+            \justifying
+
+            Summarise the principal contribution in two or three
+            sentences. State how the combined research advances
+            engineering practice and identify the next stage of the
+            research programme.
+        \end{alertblock}
+
+    \end{column}
+
+    \begin{column}{0.42\textwidth}
+
+        \begin{block}{Selected outputs}
+            \justifying
+
+            \begin{itemize}
+                \item Selected journal publication.
+                \item Selected conference publication.
+                \item Dataset, software, or demonstrator.
+            \end{itemize}
+        \end{block}
+
+    \end{column}
+
+\end{columns}
+
+\vspace{0.35cm}
+
+% ---------------------------------------------------------
+% ACKNOWLEDGEMENT
+% ---------------------------------------------------------
+\begin{block}{Acknowledgements and contact}
+    \justifying
+
+    Add funding agencies, collaborating institutions, industry
+    partners, project identifiers, a QR code, and relevant contact
+    information.
+\end{block}
+
+\end{frame}
+
+\end{document}
