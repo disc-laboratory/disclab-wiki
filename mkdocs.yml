@@ -111,6 +111,12 @@ nav:
       - DISCLab Slides Template: lab-templates/template_slides.md
       - DISCLab CV Template: lab-templates/template_cv.md
       - DISCLab Paper Template: lab-templates/template_paper.md
+  - Zero-to-hero:
+  - Admin processes:
+      - URECA students reimbursement: admin-process/URECA_Reimbursement_Guide.md
+  - Literature reviews:
+      - Computer-vision-based inspection and monitoring: literature-review/CV_Inspection_Monitoring.md
+    
   #- Data Management:
   #    - Overview: data-management/index.md
   #    - Folder Hierarchy: data-management/folder-hierarchy.md
