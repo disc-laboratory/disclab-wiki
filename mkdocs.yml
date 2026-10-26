@@ -114,6 +114,7 @@ nav:
   #- Zero-to-hero:
   - Admin processes:
       - URECA students reimbursement: admin-process/URECA_Reimbursement_Guide.md
+  - Important Sheets: important_sheets/links_to_sheets.md
   - Literature reviews:
       - Computer-vision-based inspection and monitoring: literature-review/CV_Inspection_Monitoring.md
     
