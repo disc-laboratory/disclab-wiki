@@ -1,0 +1,263 @@
+%===============================
+% Academic CV Template — DISCLab
+% Bryan G. Pantoja-Rosero style
+% Conservative,clean,grayscale,sans-serif,single-column
+% Engine: pdfLaTeX (Overleaf / TeXLive)
+%===============================
+\documentclass[11pt]{article}
+
+% ---------- Page & fonts ----------
+\usepackage[margin=0.85in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+
+% ---------- Colors (grayscale) ----------
+\usepackage{xcolor}
+\definecolor{cvgray}{gray}{0.20}
+\definecolor{cvrule}{gray}{0.75}
+
+% ---------- Hyperlinks ----------
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=cvgray,
+  urlcolor=cvgray,
+  citecolor=cvgray
+}
+
+% ---------- Tables & lists ----------
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=2pt}
+
+% ---------- Section styling ----------
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bfseries\color{cvgray}}{}{0pt}{}[\vspace{2pt}\color{cvrule}\titlerule\vspace{2pt}]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+% ---------- Avoid awkward “holes” before headings ----------
+\usepackage{needspace}
+% Adjust the number if you want more/less "keep with next content"
+\newcommand{\cvsection}[1]{\needspace{8\baselineskip}\section*{#1}}
+
+% ---------- Bibliography (BibLaTeX with BibTeX backend) ----------
+\usepackage[
+  backend=bibtex,
+  style=numeric,
+  sorting=ydnt,      % year (desc), name, title
+  defernumbers=true,
+  maxbibnames=99,
+  giveninits=true,   % initials (e.g., J. Q.)
+  doi=true,
+  url=true,
+  isbn=false,
+  eprint=true
+]{biblatex}
+\addbibresource{publications.bib}
+
+% --- Bold "Your Name" in publications (EDIT THESE TWO STRINGS) ---
+% Set the family name you want to bold here:
+\newcommand{\MyFamilyNameForBold}{Doe}
+% (Optional) You can also match given names if you want; we keep it simple (family only).
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifdefstring{\namepartfamily}{\MyFamilyNameForBold}
+    {\textbf{#1}}
+    {#1}%
+}
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifdefstring{\namepartfamily}{\MyFamilyNameForBold}
+    {\textbf{#1}}
+    {#1}%
+}
+
+% ---------- Custom CV commands ----------
+\newcommand{\cvname}[1]{\begin{center}\Huge\bfseries #1\end{center}\vspace{-2mm}}
+\newcommand{\cvtitleline}[1]{\begin{center}\normalsize #1\end{center}\vspace{-1mm}}
+\newcommand{\cvcontact}[1]{\begin{center}\small #1\end{center}\vspace{2mm}}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{3.2cm}}
+
+% \cventry{Dates}{Role/Degree}{Institution}{Location}{\item ...}
+\newcommand{\cventry}[5]{%
+  \begin{tabularx}{\textwidth}{L R}
+    \textbf{#2} \if\relax\detokenize{#3}\relax\else --- #3\fi & \textit{#1} \\
+    \if\relax\detokenize{#4}\relax
+    \else
+      #4 & \\
+    \fi
+  \end{tabularx}%
+  \if\relax\detokenize{#5}\relax\else
+    \vspace{0mm}
+    \begin{itemize}[leftmargin=25pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt]
+      #5
+    \end{itemize}
+  \fi
+  \vspace{5pt}
+}
+
+% Subhead style (Option 5 you approved)
+\newcommand{\cvsubhead}[1]{%
+  \vspace{6pt}\noindent
+  {\color{cvrule}\rule{1.2pt}{10pt}}\hspace{0.7em}%
+  {\color{cvgray}\normalsize\bfseries #1}\par\vspace{2pt}%
+}
+
+\newenvironment{cvsublist}{%
+  \begin{itemize}[leftmargin=18pt, itemsep=2pt, topsep=2pt, parsep=0pt, partopsep=0pt]
+}{%
+  \end{itemize}\vspace{2pt}
+}
+
+\newcommand{\cvitem}[2]{%
+  \noindent\textbf{#1}\hspace{0.6em}#2\par\vspace{3pt}%
+}
+
+% BibLaTeX heading that uses cvsubhead
+\defbibheading{cvsubbib}[\refname]{%
+  \cvsubhead{#1}%
+}
+
+% ---------- Optional toggles ----------
+\newif\ifShowReferences
+\ShowReferencestrue  % set \ShowReferencesfalse to hide references
+
+% ---------- Document ----------
+\begin{document}
+
+% ===== Header =====
+\cvname{John Q. Doe, Ph.D.} % <-- EDIT
+\cvtitleline{Assistant Professor, Department of Civil and Environmental Engineering, Example University \\%
+Head of Example Laboratory (ExLab) \\%
+Co-founder, Example Spin-off}
+
+\cvcontact{City, Country \,\textbar\, +00 0000 0000 \,\textbar\,
+\href{mailto:john.doe@university.edu}{john.doe@university.edu} \,\textbar\, \href{mailto:john.doe@gmail.com}{john.doe@gmail.com}\\
+\href{https://example.com}{Lab Website} \,\textbar\,
+\href{https://scholar.google.com}{Google Scholar} \,\textbar\,
+\href{https://orcid.org}{ORCID} \,\textbar\,
+\href{https://www.linkedin.com}{LinkedIn} \,\textbar\,
+\href{https://github.com}{GitHub}}
+
+% ===== Sections =====
+
+\cvsection{Academic qualifications}
+\cventry{01/2018--12/2021}{Ph.D., Civil Engineering}{Example Institute of Technology (EIT)}{City, Country}{
+  \item Thesis: \textit{Title of the doctoral thesis goes here}
+  \item Advisor: Prof.\ A.\ Advisor \quad \textbar \quad Co-advisor: Dr.\ B.\ CoAdvisor
+  \item Funding: Funding agency / project name
+  \item Highlight: Award / nomination / distinction (Year)
+}
+\cventry{09/2015--06/2017}{M.Sc., Structural Engineering}{Example University}{City, Country}{
+  \item Thesis: \textit{Title of the master thesis goes here}
+  \item Advisor: Prof.\ C.\ Advisor \quad \textbar \quad Scholarship: Fellowship name
+}
+\cventry{09/2011--06/2015}{B.Sc., Civil Engineering}{Example University}{City, Country}{} % no bullets
+
+\cvsection{Employment history}
+\cventry{01/2024--Present}{Assistant Professor}{Example University}{City, Country}{
+  \item School/Dept.: Department of Civil and Environmental Engineering
+  \item Laboratory: Example Laboratory (ExLab)
+  \item Website: \href{https://example.com}{example.com}
+}
+\cventry{01/2022--12/2023}{Postdoctoral Fellow}{Example Research Center}{City, Country}{
+  \item Project: Short description of project / topic
+  \item Funding: Sponsor / grant name
+  \item Lab/Group: Group name (optional link)
+}
+\cventry{06/2019--12/2021}{Research Engineer (Industry)}{Example Company}{City, Country}{
+  \item Responsibilities: concise list of responsibilities or achievements
+  \item Tools: key tools / methods used
+}
+
+\cvsection{Research projects}
+\begin{itemize}
+  \item \textit{Project title} — short descriptor (funding amount optional).
+  \item \textit{Project title} — short descriptor.
+  \item \textit{Project title} — short descriptor.
+\end{itemize}
+
+\cvsection{Publications}
+% Keep \nocite{*} while drafting; remove if you only want cited items.
+\nocite{*}
+
+\printbibliography[type=article,       heading=cvsubbib, title={Journal Articles}, resetnumbers=true, sorting=ydnt]
+\printbibliography[type=inproceedings, heading=cvsubbib, title={Conference Proceedings}, resetnumbers=true, sorting=ydnt]
+\printbibliography[type=thesis,        heading=cvsubbib, title={Theses}, resetnumbers=true, sorting=ydnt]
+\printbibliography[type=unpublished,   heading=cvsubbib, title={Manuscripts / Preprints}, resetnumbers=true, sorting=ydnt]
+\printbibliography[type=misc,          heading=cvsubbib, title={Other Publications / Technical Reports}, resetnumbers=true, sorting=ydnt]
+
+\cvsection{Teaching Experience}
+\cvsubhead{As main lecturer}
+\begin{cvsublist}
+  \item \textbf{Example University}: Course A; Course B; Course C.
+  \item \textbf{Another University}: Course D; Course E.
+\end{cvsublist}
+
+\cvsubhead{As teaching assistant}
+\begin{cvsublist}
+  \item \textbf{Example Institute}: Course F (tutorials, grading, labs).
+\end{cvsublist}
+
+\cvsubhead{As invited lecturer}
+\begin{cvsublist}
+  \item \textbf{Visiting School}: Summer School (Year), \textit{Title}; lecture topic (one line).
+\end{cvsublist}
+
+\cvsection{Supervision and Mentoring}
+\begin{itemize}
+  \item Ph.D.: Student Name — Topic — role (main supervisor / co-supervisor).
+  \item M.Sc./UG: Student Name — Topic — role.
+\end{itemize}
+
+\cvsection{Awards and Honors}
+\begin{itemize}
+  \item Award name — awarding body (Year).
+  \item Fellowship / scholarship — organization (Year).
+\end{itemize}
+
+\cvsection{Service}
+\cvsubhead{Conference organization}
+\begin{cvsublist}
+  \item \textit{Symposium/Workshop Title} — role, conference name (Year), City, Country. Co-organizers: Name; Name; Name.
+\end{cvsublist}
+
+\cvsubhead{Journal reviewing}
+\begin{cvsublist}
+  \item \textbf{Publisher A}: \textit{Journal 1; Journal 2; Journal 3}.
+  \item \textbf{Publisher B}: \textit{Journal 4; Journal 5}.
+\end{cvsublist}
+
+\cvsection{Talks and Invited Lectures}
+\begin{itemize}
+  \item Institution — Event (Year): talk title / topic.
+\end{itemize}
+
+\cvsection{Software}
+\begin{itemize}
+  \item ProjectName (role): one-line description. Repository: \href{https://github.com}{github.com/...}
+  \item ProjectName (role): one-line description. Website: \href{https://example.com}{example.com/...}
+\end{itemize}
+
+\cvsection{Technical Skills}
+\cvitem{Languages}{English (fluent), Spanish (native), French (intermediate).}
+\cvitem{Programming}{Python, C++, MATLAB, \LaTeX.}
+\cvitem{ML/CV}{PyTorch; scikit-learn; detection/segmentation; active learning; 3D vision.}
+\cvitem{XR}{Unity, HoloLens/MRTK (optional).}
+\cvitem{Tools}{Git; Linux; Docker; HPC (optional).}
+
+\ifShowReferences
+\cvsection{References}
+\begin{itemize}
+  \item Prof.\ A.\ Advisor (Example University) — \href{mailto:advisor@university.edu}{advisor@university.edu} — +00 0000 0000
+  \item Prof.\ B.\ Collaborator (Example Institute) — \href{mailto:collab@institute.org}{collab@institute.org} — +00 0000 0000
+\end{itemize}
+\fi
+
+\end{document}
