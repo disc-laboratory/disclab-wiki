@@ -112,11 +112,13 @@ nav:
       - DISCLab CV Template: lab-templates/template_cv.md
       - DISCLab Paper Template: lab-templates/template_paper.md
   #- Zero-to-hero:
-  - Admin processes:
-      - URECA students reimbursement: admin-process/URECA_Reimbursement_Guide.md
   - Important Sheets: important_sheets/links_to_sheets.md
   - Literature reviews:
       - Computer-vision-based inspection and monitoring: literature-review/CV_Inspection_Monitoring.md
+  - Admin processes:
+    - URECA students reimbursement: admin-process/URECA_Reimbursement_Guide.md
+    - Instructions to access to DISCLab GPU: admin-process/DISCLab_disc1_user_guide.md
+
     
   #- Data Management:
   #    - Overview: data-management/index.md
